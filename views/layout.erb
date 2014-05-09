@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Security Information</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div id="header" style="background-color:RoyalBlue;">
+    Reload by 15 min / Latest 2 weeks
+    </div>
+
+   <h1>Security Information	</h1>
+    <div class="row-fluid">
+      <div class="col-md-8" id="main">
+      	 <%= yield %>
+      </div>
+      <div class="col-md-4" id="sidebar" style="background-color:white;">
+
+<% # non-RSS websites %>
+<div class="panel panel-primary">
+	<div class="panel-heading">Related Links (Hot!!!)</div>
+	<div class="panel-body">
+<a class="btn btn-primary btn-large" href="http://www.security-next.com/category/cat191">[HOT]SecurityNext</a><br>
+<a class="btn btn-primary btn-large" href="http://www.lac.co.jp/security/blog/">[HOT]LAC Media Crip</a><br>
+<a class="btn btn-primary btn-large" href="http://japan.zdnet.com/security/">[HOT]ZDnet Security(JP)</a><br>
+<a class="btn btn-primary btn-large" href="https://sect.iij.ad.jp/">[HOT]IIJ SECT</a><br>
+<a class="btn btn-primary btn-large" href="http://www.f-secure.com/weblog/">[HOT]F-Secure</a><br>
+<a class="btn btn-primary btn-large" href="http://blogs.technet.com/b/jpsecurity/default.aspx">[HOT]MS SecTeam(JP)</a><br>
+<a class="btn btn-primary btn-large" href="https://community.rapid7.com/community/metasploit/blog">[HOT]Metasploit Blog</a><br>
+<a class="btn btn-primary btn-large" href="http://blog.tokumaru.org/">[HOT]Mr.Tokumaru</a><br>
+<a class="btn btn-primary btn-large" href="http://blogs.technet.com/b/srd/default.aspx">[HOT]MS Security</a><br>
+<a class="btn btn-primary btn-large" href="http://port139.hatenablog.com/">[HOT]Forengic (JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://www.antiphishing.jp/">Phishng taisaku</a><br>
+<a class="btn btn-primary btn-large" href="http://www.npa.go.jp/cyberpolice/">@Police</a><br>
+<a class="btn btn-primary btn-large" href="http://www.nisc.go.jp/">NISC</a><br>
+<a class="btn btn-primary btn-large" href="http://blog.sei.cmu.edu/">CERT/CC SEI Blog</a><br>
+<a class="btn btn-primary btn-large" href="http://www.cert.org/blogs/certcc/">CERT/CC</a><br>
+<a class="btn btn-primary btn-large" href="http://securitytracker.com/archives/summary/9000.html">SecurityTracker</a> - Vulnerbilities<br>
+<a class="btn btn-primary btn-large" href="http://seclists.org/">SecLists</a> - Mailinglist Archives<br>
+<a class="btn btn-primary btn-large" href="http://www.securityfocus.com/">SecurityFocus</a> - Symantec Archives<br>
+<a class="btn btn-primary btn-large" href="http://secunia.com/advisories/historic/">[HOT]Secunia</a><br>
+<a class="btn btn-primary btn-large" href="http://blog.watchfire.com/">IBM watchfire</a><br>
+<a class="btn btn-primary btn-large" href="http://secunia.com/company/blog_news/">Secunia blog</a><br>
+<a class="btn btn-primary btn-large" href="http://isc.sans.org/">SANS</a><br>
+<a class="btn btn-primary btn-large" href="http://www.cyberwarzone.com/">[!]Cyberwarzone</a><br>
+<a class="btn btn-primary btn-large" href="http://www.symantec.com/connect/ja/symantec-blogs/sr">[HOT]Symantec Security Response(JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://www.securityfocus.com/vulnerabilities">vulnerabilities(too many)</a><br>
+<a class="btn btn-primary btn-large" href="https://www-304.ibm.com/connections/blogs/tokyo-soc/?lang=ja">IBM Tokyo-SOC</a><br>
+<a class="btn btn-primary btn-large" href="http://googleonlinesecurity.blogspot.jp/">Google Sec Blog</a><br>
+<a class="btn btn-primary btn-large" href="http://japan.cnet.com/">CNet(JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://a.hatena.ne.jp/securityantenna/">SecurityAntenna1</a><br>
+<a class="btn btn-primary btn-large" href="http://www.morihi-soc.net/securityantenna2/">SecurityAntenna2</a><br>
+<a class="btn btn-primary btn-large" href="http://technet.microsoft.com/ja-jp/security/default.aspx">MS Bulletin(JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://blogs.msdn.com/b/sdl/">MS SDLifecycle</a><br>
+	</div>
+</div>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">Related Links (Cold...)</div>
+	<div class="panel-body">
+<a class="btn btn-primary btn-large" href="http://www.intellilink.co.jp/article/vulner/vulner.html">NTT_D Intellilink</a><br>
+<a class="btn btn-primary btn-large" href="http://www.atmarkit.co.jp/fsecurity/index/index_kawaguchi.html">SecurityPrivateEyes</a> - Mr.Kawaguchi, LAC<br>
+<a class="btn btn-primary btn-large" href="http://www.itmedia.co.jp/enterprise/security/">ITmedia Security</a><br>
+<a class="btn btn-primary btn-large" href="http://d.hatena.ne.jp/ukky3/">Security Blog</a><br>
+<a class="btn btn-primary btn-large" href="http://www.rbl.jp/phishing/">Phising Info(JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://exploitshop.wordpress.com/">Exploit Shop</a><br>
+<a class="btn btn-primary btn-large" href="http://www.bgpmon.net/blog/">BGP mon</a><br>
+<a class="btn btn-primary btn-large" href="http://blogs.msdn.com/b/dd_jpn/">MS Product Blog(JP)</a><br>
+<a class="btn btn-primary btn-large" href="https://blogs.oracle.com/sec/">Oracle Blog(JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://androguard.blogspot.jp/">Androguard</a><br>
+<a class="btn btn-primary btn-large" href="http://news.mynavi.jp/column/itsecurity/">Mr.Arai</a><br>
+<a class="btn btn-primary btn-large" href="http://blogs.itmedia.co.jp/akikot/">Ms.Takahashi</a><br>
+	</div>
+</div>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">Tools</div>
+	<div class="panel-body">
+<a class="btn btn-primary btn-large" href="https://www.virustotal.com/">[HOT]VirusTotal</a><br>
+<a class="btn btn-primary btn-large" href="http://www.aguse.jp/">[HOT]Aguse</a><br>
+<a class="btn btn-primary btn-large" href="http://www.urlvoid.com/">[HOT]URL Void</a><br>
+<a class="btn btn-primary btn-large" href="http://urlblacklist.com/">URL Blacklist</a><br>
+<a class="btn btn-primary btn-large" href="http://www.iputilities.net/blacklist.html">IP Blacklist(JP)</a><br>
+<a class="btn btn-primary btn-large" href="http://www.metasploit.com/">Metasploit</a><br>
+<a class="btn btn-primary btn-large" href="http://sectools.org/">Security Tools</a><br>
+<a class="btn btn-primary btn-large" href="http://www.wireshark.org/">Wireshark</a><br>
+<a class="btn btn-primary btn-large" href="http://nmap.org/">nmap</a><br>
+	</div>
+</div>
+
+
+<div class="panel panel-primary">
+	<div class="panel-heading">Underground</div>
+	<div class="panel-body">
+<a class="btn btn-primary btn-large" href="http://pastebin.com/">[HOT]Pastebin</a><br>
+<a class="btn btn-primary btn-large" href="http://www.hackforums.net/">HackForums</a><br>
+<a class="btn btn-primary btn-large" href="http://grams.onion/">GRAMS</a> - TOR only<br>
+
+	</div>
+</div>
+
+
+
+
+	  </div>
+    </div>
+
+    <div id="footer">
+    Powered by Nokogiri / Ruby<br>
+	Author: Shigeyuki.O<br>
+	Since: 2014-05-06<br>
+    </div>
+
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

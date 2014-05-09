@@ -1,0 +1,27 @@
+LastUpdate: <%= @f.mtime.strftime("%Y-%m-%d %H:%M:%S") %><br>
+<% # Twitter %>
+<a class="twitter-timeline" href="https://twitter.com/sec_news_info/lists/secinfo" data-widget-id="463194499137548288">https://twitter.com/sec_news_info/lists/secinfo>Tweet from security info</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<% @f.each do |entry| %>
+<% element = entry.strip.split(/\\t/) %>
+<% # Index %>
+<% if element[0] == '+' %>
+<div class="well well-lg">
+	<h3><a href="<%= element[2] %>"><%= element[1] %></a></h3>
+<% elsif element[0] == '-' %>
+</div>
+
+<% elsif element[0] == '\#' %>
+
+<% else %>
+<ul>
+  	<li>[<%= element[3] %>]
+		<a href="<%= element[0] %>"><%= element[1] %></a><br>
+		<%= element[2] %><br>
+	</li>
+</ul>
+<% end %>
+<% end %>
+
+
